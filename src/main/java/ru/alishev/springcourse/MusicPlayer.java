@@ -45,4 +45,11 @@ public class MusicPlayer {
             System.out.println(music.getSong());
         }
     }
+    private void doBeanInit() {
+        System.out.println("Initializing bean");
+    }
+
+    private void doBeanDestroy() {
+        System.out.println("Actions before destroy");
+    }
 }
