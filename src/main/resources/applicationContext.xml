@@ -27,7 +27,8 @@
         </constructor-arg>
     </bean>
     <bean id="musicPlayer"
-          class="ru.alishev.springcourse.MusicPlayer">
+          class="ru.alishev.springcourse.MusicPlayer"
+          scope="prototype">
         <property name="music" ref = "classicalMusicBean"/>
         <property name="musicList" ref="musicList"/>
         <property name="name" value="${musicPlayer.name}"/>
